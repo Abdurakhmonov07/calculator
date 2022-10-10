@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+}
+
+.corpus {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  width: 359px;
+  height: 653px;
+  border: 1px solid black;
+  border-radius: 39px;
+  background-color: #1c1c1c;
+}
+
+.display {
+  display: flex;
+  align-items: flex-end;
+  text-align: end;
+  justify-content: flex-end;
+  height: 200px;
+  color: #ffffff;
+  font-size: 64px;
+  padding-right: 5px;
+}
+
+.display h1 {
+  font-size: 64px;
+}
+
+hr {
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 7px;
+  justify-content: center;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.keyboard div {
+  width: 80px;
+  height: 80px;
+  background-color: #6d6d6d;
+  border: 1px solid #6d6d6d;
+  border-radius: 50px;
+  font-family: Roboto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.keyboard div:hover {
+  background-color: rgb(19, 100, 6);
+  transition: 0.3s ease-in-out;
+  border-color: rgb(19, 100, 6);
+}
+
+.keyboard div h3 {
+  font-size: 48px;
+  color: #ffffff;
+  line-height: 56.25px;
+}
+.keyboard .number-zero {
+  grid-column: span 2;
+  width: 165px !important;
+  justify-content: unset;
+}
+
+.keyboard .number-zero h3 {
+  padding-left: 30px;
+}
+
+.keyboard .primary-operators {
+  background-color: #aeaeae;
+  border-color: #aeaeae;
+}
+
+.keyboard .operator {
+  background-color: #ffb800;
+  border-color: #ffb800;
+  font-family: Roboto;
+}
+
+.keyboard .operator:hover {
+  background-color: rgb(215, 88, 79);
+  border-color: rgb(215, 88, 79);
+  transition: 0.3s ease-in-out;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+}
